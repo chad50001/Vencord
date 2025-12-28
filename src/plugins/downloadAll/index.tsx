@@ -124,12 +124,12 @@ export default definePlugin({
 
             children.push(
                 <Menu.MenuItem
-                    id="vc-download-all"
+                    id="download-all"
                     label={`Download all attachments (${allAttachments.length} files)`}
                 >
                     <Menu.MenuItem
-                        id="vc-download-zip"
-                        label="As ZIP file (1 download)"
+                        id="download-zip"
+                        label="As ZIP file"
                         action={async () => {
                             try {
                                 await downloadAsZip(allAttachments);
@@ -140,8 +140,8 @@ export default definePlugin({
                         }}
                     />
                     <Menu.MenuItem
-                        id="vc-download-individual"
-                        label="Download 1 by 1 (multiple downloads, will open multiple download windows!!!)"
+                        id="download-individual"
+                        label="Download 1 by 1"
                         action={() => downloadIndividually(allAttachments)}
                     />
                 </Menu.MenuItem>
