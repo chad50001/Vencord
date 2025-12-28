@@ -135,7 +135,7 @@ export default definePlugin({
                                 await downloadAsZip(allAttachments);
                             } catch (error) {
                                 console.error("[DownloadAll] ZIP error:", error);
-                                alert("Error making ZIP file. Check console for details.");
+                                alert("Error making ZIP file. Check console for details and try again with 1 by 1.");
                             }
                         }}
                     />
